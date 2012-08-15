@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load vocab_extras %}
+{{ username }}
+
+<h2>Courses</h2>
+{% for c in courses %}
+	<h3>{{c.name}} Study Units</h3>
+	<ul>
+	{% for su in c.studyunits.all %}
+		<li>
+			<a href="review/{{su.pk}}/">{{ su }}</a>
+			<span style="color:red; font-weight:bold">{{ profile|num_cards_due:su }}</span>
+		</li>
+	{% endfor %}
+	</ul>
+{% endfor %}
+
+{% endblock %}`

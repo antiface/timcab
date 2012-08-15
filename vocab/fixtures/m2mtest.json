@@ -1,0 +1,53 @@
+[
+	{	
+		"model": "vocab.studyunit", 
+		"pk": 1, 
+		"fields": {
+			"name": "SAT Vocab 1-100 (day1)"
+		}
+	},
+	{
+		"model": "vocab.studyunit",
+		"pk": 2, 
+		"fields": {
+			"name": "SAT Writing Idioms"
+		}
+	},
+	{
+		"model": "vocab.card",
+		"pk": 1, 
+		"fields": {
+			"front": "King of England",
+			"back": "George III",
+			"studyunit": 2
+		}	
+	}, 
+	{
+		"model": "vocab.card",
+		"pk": 2, 
+		"fields": {
+			"front": "Queen of England",
+			"back": "Elizabeth ldo",
+			"studyunit": 2
+		}	
+	}, 
+	{
+		"model": "vocab.card",
+		"pk": 3, 
+		"fields": {
+			"front": "Hamlet's Author",
+			"back": "Shakespearo",
+			"studyunit": 1 
+		}	
+	}, 
+	{
+		"model": "vocab.card",
+		"pk": 4, 
+		"fields": {
+			"front": "Moby Dick's Author",
+			"back": "Herman Dickville",
+			"studyunit": 1 
+		}	
+	}
+]
+

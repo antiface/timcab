@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% load vocab_extras %}
+
+{% block content %}
+
+{{ username }}
+
+<h1>Card Front:</h1>
+
+<h2>{{ first_due.card.front }}</h2>
+
+<form action="showback/" method="post">
+{% csrf_token %}
+<input type="hidden" value="{{first_due.id}}" /> 
+<input type="submit" value="Show Back" />
+</form>
+
+{% endblock %}`
